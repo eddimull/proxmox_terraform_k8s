@@ -17,7 +17,7 @@ resource "proxmox_vm_qemu" "test_vm" {
 
   cores   = 3
   sockets = 1
-  memory  = 2560
+  memory  = 1024
 
   network {
     model  = "virtio"
