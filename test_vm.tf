@@ -1,5 +1,5 @@
 resource "proxmox_vm_qemu" "test_vm" {
-  name        = "tftest1.xyz.com"
+  name        = "K8s Master"
   desc        = "tf description"
   target_node = "proxmox"
 
