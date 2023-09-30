@@ -4,8 +4,8 @@ resource "proxmox_vm_qemu" "k8s_master" {
   target_node = "proxmox"
 
   clone    = "ci-ubuntu-template"
-  oncreate = false
-  os_type  = "cloud-init"
+  # oncreate = false
+  # os_type  = "cloud-init"
   # preprovision = false
 
   # The destination resource pool for the new VM
