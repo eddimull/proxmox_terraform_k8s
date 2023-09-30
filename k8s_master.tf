@@ -2,8 +2,8 @@ resource "proxmox_vm_qemu" "k8s_master" {
   name        = "K8s Master"
   desc        = "K8s Master"
   target_node = "proxmox"
-
-  clone    = "ci-ubuntu-template"
+  vmid        = 106
+  clone       = "ci-ubuntu-template"
   # oncreate = false
   # os_type  = "cloud-init"
   # preprovision = false
