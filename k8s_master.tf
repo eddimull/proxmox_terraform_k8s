@@ -5,8 +5,6 @@ resource "proxmox_vm_qemu" "k8s_master" {
 
   clone = "ci-ubuntu-template"
 
-  oncreate = false
-
   # The destination resource pool for the new VM
   # pool = "pool0"
 
